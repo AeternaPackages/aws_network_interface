@@ -191,11 +191,6 @@ output "network_interface_attachments_status" {
 }
 
 # --- aws_network_interface_permission ---
-output "network_interface_permissions_id" {
-  description = "Map of id values across all network_interface_permissions, keyed the same as var.network_interface_permissions"
-  value       = module.network_interface_permissions.network_interface_permissions_id
-}
-
 output "network_interface_permissions_aws_account_id" {
   description = "Map of aws_account_id values across all network_interface_permissions, keyed the same as var.network_interface_permissions"
   value       = module.network_interface_permissions.network_interface_permissions_aws_account_id
